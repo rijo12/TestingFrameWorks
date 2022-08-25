@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener
+			class-name="com.naveenautomation.utils.CustomListener" />
+		<listener
+			class-name="com.naveenautomation.RetryLogic.TransformerForRetry" />
+		<listener
+			class-name="com.naveenautomation.reports.ExtentReportListener" />
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.naveenautomation.Tests.AccountLoginTest"/>
+      <class name="com.naveenautomation.Tests.MyAccountTest"/>
+      <class name="com.naveenautomation.Tests.CheckoutTest"/>
+      <class name="com.naveenautomation.Tests.MyAccountPasswordTest"/>
+      <class name="com.naveenautomation.Tests.PhonesAndPDAsTest"/>
+      <class name="com.naveenautomation.Tests.YourStoreTest"/>
+      <class name="com.naveenautomation.Tests.ChangePasswordTest"/>
+      <class name="com.naveenautomation.Tests.YourOrderPlacedTest"/>
+      <class name="com.naveenautomation.Tests.ShoppingCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
