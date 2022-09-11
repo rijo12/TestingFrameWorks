@@ -13,6 +13,9 @@ import com.naveenautomation.excelSignupPages.RegisterAccountPage;
 import com.naveenautomation.excelSignupPages.YourAccountCreatedPage;
 import com.naveenautomation.excelSignupPages.YourStorePage;
 import com.naveenautomation.utils.ExcelUtils;
+import com.naveenautomation.utils.Utils;
+
+import bsh.util.Util;
 
 public class RegisterAccountTest extends TestBase {
 	
@@ -34,6 +37,8 @@ public class RegisterAccountTest extends TestBase {
 	
 	@Test(dataProvider = "SignUpData")
 	public void signUptest(String firstName,String lastName,String email,String number,String password,String confirmPassword) {
+		
+		rap.privacyPolicySelect();
 		
 		YourAccountCreatedPage account=rap.dataInput(firstName, lastName, email, number, password, confirmPassword);
 		

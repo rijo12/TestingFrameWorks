@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.naveenautomation.base.TestBase;
+import com.naveenautomation.utils.Utils;
 
 public class YourAccountCreatedPage extends TestBase {
 	
@@ -18,7 +19,7 @@ public class YourAccountCreatedPage extends TestBase {
 	
 	public String getText() {
 		
-		return text.getText();
+		return Utils.getText(text);
 	}
 
 }

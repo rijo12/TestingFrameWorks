@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.naveenautomation.base.TestBase;
+import com.naveenautomation.utils.Utils;
 
 public class RegisterAccountPage extends TestBase {
 	
@@ -40,36 +41,36 @@ public class RegisterAccountPage extends TestBase {
 	
 	public void firstNameData(String firstName) {
 		
-		fisrtNameField.sendKeys(firstName);
+		Utils.sendKeys(fisrtNameField, firstName);
 	}
 
 	public void lastNameData(String lastName) {
 		
-		lastNameField.sendKeys(lastName);
+		Utils.sendKeys(lastNameField, lastName);
 	}
 	public void eMailData(String eMail) {
 		
-		eMailField.sendKeys(eMail);
+		Utils.sendKeys(eMailField, eMail);
 	}
 	
 	public void telephoneData(String number) {
 		
-		telephoneField.sendKeys(number);
+		Utils.sendKeys(telephoneField, number);
 	}
 	
 	public void passwordData(String password) {
 		
-		passwordField.sendKeys(password);
+		Utils.sendKeys(passwordField, password);
 	}
 	
 	public void confirmPasswordData(String confirmPassword) {
 		
-		passwordConfirmField.sendKeys(confirmPassword);
+		Utils.sendKeys(passwordConfirmField, confirmPassword);
 	}
 	
 	public void privacyPolicySelect() {
 		
-		privacyPolicyCheck.click();
+		Utils.click(privacyPolicyCheck);
 	}
 	
 	public YourAccountCreatedPage continueBtnClick() {
