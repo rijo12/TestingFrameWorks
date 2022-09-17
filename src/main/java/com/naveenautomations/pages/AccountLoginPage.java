@@ -36,7 +36,7 @@ public class AccountLoginPage extends TestBase {
 	public MyAccountPage clickSubmit() {
 
 		loginButton.submit();
-
+//comment it//
 		return new MyAccountPage();
 	}
 
